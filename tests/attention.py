@@ -117,6 +117,8 @@ test = {   'name': 'attention',
                                                '>>> bsz = 7;\n'
                                                '>>> D = 13;\n'
                                                '>>> \n'
+                                               '>>> _ = torch.manual_seed(1234);\n'
+                                               '>>> \n'
                                                '>>> batched_Q = torch.randn(q_len, bsz, D).to(device);\n'
                                                '>>> batched_K = torch.randn(k_len, bsz, D).to(device);\n'
                                                '>>> batched_V = torch.randn(k_len, bsz, D).to(device);\n'
